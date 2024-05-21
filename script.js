@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function setHoverRating(index) {
+        index = index - 1;
         stars.forEach((star, i) => {
             if (i < index) {
                 star.classList.add('full');
